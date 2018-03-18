@@ -277,6 +277,7 @@
         this.$emit('input', password)
         this.dirty = true
         this.strength = passwordStrength(password, this.userInputs)
+        this.$emit('strength', this.strength)
       },
 
       /**
